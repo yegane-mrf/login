@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style From.css">
+    <link rel="stylesheet" href="font-6/css/all.min.css">
+    <link rel="stylesheet" href="font-6/css/fontawesome.min.css">
+    <title>Form Validation</title>
+   
+<body>
+    <form action=" #">
+    <div class="container" >
+        <div class="Form signUp">
+            <h2>Sign Up</h2>
+            
+            <div class="inputBox">
+                <input type="text" required>
+                <i class="fa fa-duotone fa-user"></i>
+                <span>Uername</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required>
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required>
+                <i class="fa-solid fa-lock"></i>
+                <span>Create Password</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" required>
+                <i class="fa-solid fa-lock"></i>
+                <span>Confirm Password</span>
+            </div>
+
+            <div class="inputBox">
+                <input type="submit" value="Create Account">
+            </div>
+            
+            <p>Already a member?<a href="#" class="login" style="font-weight: 500;color: #fff; text-decoration: none;"> Login</a></p>
+            
+        </div>
+    </div>
+</form>
+
+    <script>
+        let login = document.querySelector('login');
+        let create = document.querySelector('create');
+        let container = document.querySelector('container');
+
+        login.onclick = function(){
+            container.classList.add('signinForm');
+        }
+
+        create.onclick = function(){
+            container.classList.remove('signinForm');
+        }
+
+    </script>
+     <script src="https://kit.fontawesome.com/d2c2a8dd57.js" crossorigin="anonymous"></script>
+</body>
+</html>
